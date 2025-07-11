@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spider-Gwen : Ghost-Spider</title>
+  <link rel="stylesheet" href="style-gwen.css" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <section class="music-player" id="musicPlayer">
+    <div class="music-info">
+      <h3>🎧 En écoute :</h3>
+      <p id="currentTrack">Chargement...</p>
+      <h3 class="glitch-hover">🎵 Spider-Verse Track</h3>
+    </div>
+    <div class="music-controls">
+      <button id="prevBtn">⏮️</button>
+      <button id="playPauseBtn">⏯️</button>
+      <button id="nextBtn">⏭️</button>
+    </div>
+  </section>
+
+  <audio id="gwen" loop autoplay>
+    <source src="audio/gwen.mp3" type="audio/mp3" />
+  </audio>
+
+  <section class="hero scroll-reveal">
+    <div class="overlay">
+      <h1 class="glitch">Spider-Gwen : Ghost-Spider</h1>
+      <p>Bienvenue dans l’univers de Gwen Stacy, où la douleur devient force et le silence résonne fort 🎸</p>
+      <div style="margin-top: 2rem;">
+  <a href="site.html" class="btn glitch" style="padding: 1rem 2rem; font-size: 1.2rem;">🕸️ Retour à Miles</a>
+</div>
+
+     </div>
+  </section>
+
+  <section class="biography scroll-reveal">
+    <div class="bio-content">
+      <div class="bio-text scroll-reveal">
+        <h2 class="glitch">Son histoire</h2>
+        <p>
+          Gwen Stacy, dans son monde, a perdu Peter Parker. Elle porte le masque non par gloire, mais pour que personne d'autre ne ressente ce vide. Une héroïne qui danse entre l’ombre et la lumière.
+        </p>
+      </div>
+      <div class="bio-img scroll-reveal">
+        <img src="images/gwen3.jpeg" alt="Gwen Stacy" />
+        <img src="images/gwen6.jpeg" alt="Gwen Stacy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="why-i-love scroll-reveal">
+    <h2 class="glitch">Pourquoi je l’aime</h2>
+    <p>
+      Gwen, c’est le cri silencieux de ceux qui n’abandonnent pas. Sa solitude, sa force, sa loyauté — tout en elle me touche. Elle me rappelle qu’on peut être brisé.e et quand même sauver le monde.
+    </p>
+  </section>
+
+  <section class="bond scroll-reveal">
+    <h2 class="glitch">Entre Gwen & Miles : Ce qui nous lie</h2>
+    <div class="bond-content">
+      <p class="from-juvsen">
+        J’ai toujours ressenti chez Gwen une force intérieure immense, mais aussi une douleur contenue. Quand elle regarde Miles, il y a à la fois de l’admiration, de la tendresse… et une peur sourde.  
+        La peur de le perdre, comme Peter. La peur de mal faire.  
+        Et pourtant… elle choisit toujours de le protéger, quitte à s’éloigner.
+      </p>
+      <p class="from-scarlet">
+        Gwen n’a jamais voulu trahir Miles.  
+        Elle l’a protégé dans l’ombre, dans le silence, dans l’absence.  
+        Ce qu’elle a fait en refusant de lui dire toute la vérité, c’était injuste, mais guidé par l’amour.  
+        Il est la seule anomalie… mais surtout, la seule constante dans son cœur.
+      </p>
+    </div>
+  </section>
+  <section class="powers scroll-reveal">
+  <h2 class="glitch">🕷️ Pouvoirs de Gwen</h2>
+  <div class="power-list">
+    <div class="power-card">
+      <div class="power-icon">🕸️</div>
+      <p>Maîtrise du lancer de toiles, avec une grâce acrobatique qui ferait rougir même Peter.</p>
+    </div>
+    <div class="power-card">
+      <div class="power-icon">🩰</div>
+      <p>Agilité surnaturelle : Gwen danse littéralement entre les buildings, rapide et fluide comme une vague.</p>
+    </div>
+    <div class="power-card">
+      <div class="power-icon">🎵</div>
+      <p>Sens artistique développé : batteuse dans un groupe de rock, Gwen associe force et sensibilité.</p>
+    </div>
+    <div class="power-card">
+      <div class="power-icon">🧠</div>
+      <p>Réflexes et intelligence aiguisés, capable d’anticiper les mouvements ennemis avec finesse.</p>
+    </div>
+    <div class="power-card">
+      <div class="power-icon">💥</div>
+      <p>Force proportionnelle à une araignée, capable de neutraliser plusieurs adversaires d’un coup.</p>
+    </div>
+  </div>
+</section>
+<div class="power-trigger" data-aos="fade-up" data-aos-delay="500">
+  <button id="showVideoBtn" class="btn">🎥 Voir les pouvoirs en action</button>
+</div>
+<div id="powerVideoContainer" class="power-video hidden" data-aos="fade-up" data-aos-delay="700">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/Ouscu-M10BI"
+    title="Spider-Gwen All Powers"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+
+  <section class="gallery scroll-reveal">
+    <h2 class="glitch">Galerie Ghost-Spider</h2>
+    <div class="gallery-grid">
+      <img src="images/gwen1.jpeg" alt="Gwen 1">
+      <img src="images/gwen2.jpeg" alt="Gwen 2">
+      <img src="images/gwen3.jpeg" alt="Gwen 3">
+      <img src="images/gwen4.jpeg" alt="Gwen 4">
+      <img src="images/gwen5.jpeg" alt="Gwen 5">
+      <img src="images/gwen6.jpeg" alt="Gwen 6">
+      <img src="images/gwen7.jpeg" alt="Gwen 7">
+      <img src="images/gwen8.jpeg" alt="Gwen 8">
+      <img src="images/gwen9.jpeg" alt="Gwen 9">
+      <img src="images/gwen10.jpeg" alt="Gwen 10">
+      <img src="images/gwen11.jpeg" alt="Gwen 11">
+    </div>
+  </section>
+<section class="fanclub" id="fanclub">
+  <h2 class="glitch">Rejoins le Multivers ! 🌌</h2>
+  <p>Tu es un fan de Gwen ? Tu veux discuter avec d'autres passionnés ? Ce coin est pour toi.</p>
+
+  <form class="fan-form" action="https://formspree.io/f/xzzgneqd" method="POST">
+    <input type="text" name="name" placeholder="Ton nom" required />
+    <input type="email" name="email" placeholder="Ton email" required />
+    <textarea name="message" placeholder="Ton message" required></textarea>
+    <button type="submit" class="btn glitch">🎯 Rejoindre le multivers</button>
+    <p id="formMessage" class="form-message hidden">✅ Message envoyé ! Merci 🕸️</p>
+  </form>
+
+ <section class="social-section scroll-reveal" style="text-align: center; padding: 2rem 1rem;">
+  <h2 class="glitch">🔗 Retrouve-moi ailleurs</h2>
+  <div class="social-links" style="text-align: center; margin-top: 2rem;">
+  <a href="https://www.instagram.com/lombijeremyjuvsen?igsh=MThmbzBmaDBzcDh3cg==" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+  <a href="https://wa.me/242061418623" target="_blank">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+  <a href="https://www.snapchat.com/add/jeremyjuvsen?share_id=khfWKnmjUv0&locale=en-US" target="_blank">
+    <i class="fab fa-snapchat-ghost"></i> Snapchat
+  </a>
+</div>
+</section>
+ <footer style="text-align: center; padding: 2rem; background: #111; color: white; margin-top: 4rem;">
+  &copy; 2025 Gwen Stacy Universe — Créé par Lombi Jérémy Juvsen 💖🕸️
+</footer>
+</section>
+  <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.addEventListener('DOMContentLoaded', () => {
+      const glitchElements = document.querySelectorAll('.glitch, .glitch-img');
+      glitchElements.forEach(el => {
+        el.classList.add('glitch-effect');
+      });
+    });
+    const tracks = [
+      { title: "Start a Band", file: "audio/spiderverse theme.mp3" },
+      { title: "Sunflower", file: "audio/Sunflower.mp3" },
+      { title: "What's Up Danger", file: "audio/What's up danger.mp3" },
+      { title: "Annihilate", file: "audio/Annihilate.mp3" },
+      { title: "Am I Dreaming", file: "audio/Am i dreaming.mp3" },
+      { title: "Calling", file: "audio/Calling.mp3" },
+      { title: "Link Up", file: "audio/Link up.mp3" },
+      { title: "All the Way Live", file: "audio/All the way live.mp3" },
+      { title: "Self Love", file: "audio/Self love.mp3" },
+      { title: "Danger", file: "audio/Danger.mp3" },
+      { title: "Home", file: "audio/Home.mp3" },
+      { title: "Nas Morales", file: "audio/Nas.mp3" },
+      { title: "Start a Riot", file: "audio/Start a riot.mp3" },
+      { title: "Hide", file: "audio/Hide.mp3" },
+      { title: "Familia", file: "audio/Familia.mp3" },
+      { title: "Memories", file: "audio/Memories.mp3" },
+      { title: "Save the Day", file: "audio/Save the day.mp3" },
+      { title: "Way Up", file: "audio/Way up.mp3" },
+      { title: "Scared of the Dark", file: "audio/Scared of the dark.mp3" },
+      { title: "Elevate", file: "audio/Elevate.mp3" }
+    ];
+
+    let currentIndex = 0;
+    let isPlaying = false;
+
+    const audio = new Audio();
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const currentTrackDisplay = document.getElementById('currentTrack');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+
+    function loadTrack(index) {
+      audio.src = tracks[index].file;
+      currentTrackDisplay.textContent = tracks[index].title;
+      audio.load();
+    }
+
+    function playTrack() {
+      audio.play().then(() => {
+        isPlaying = true;
+        playPauseBtn.textContent = '⏸️';
+      }).catch(() => {
+        alert("Veuillez cliquer pour autoriser la lecture audio.");
+      });
+    }
+
+    function pauseTrack() {
+      audio.pause();
+      isPlaying = false;
+      playPauseBtn.textContent = '▶️';
+    }
+
+    function nextTrack() {
+      currentIndex = (currentIndex + 1) % tracks.length;
+      loadTrack(currentIndex);
+      playTrack();
+    }
+
+    function prevTrack() {
+      currentIndex = (currentIndex - 1 + tracks.length) % tracks.length;
+      loadTrack(currentIndex);
+      playTrack();
+    }
+
+    playPauseBtn.addEventListener('click', () => {
+      if (isPlaying) {
+        pauseTrack();
+      } else {
+        playTrack();
+      }
+    });
+
+    nextBtn.addEventListener('click', nextTrack);
+    prevBtn.addEventListener('click', prevTrack);
+    audio.addEventListener('ended', nextTrack);
+
+    loadTrack(currentIndex);
+
+    const ambiance = document.getElementById("gwen");
+    ambiance.volume = 0.2;
+
+    window.addEventListener('load', () => {
+      ambiance.play().catch(() => {
+        console.log("Autoplay bloqué");
+      });
+    });
+
+    audio.addEventListener('play', () => {
+      ambiance.volume = 0.09;
+    });
+
+    audio.addEventListener('pause', () => {
+      ambiance.volume = 0.2;
+    });
+
+    // scroll reveal
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      revealElements.forEach(el => {
+        const elTop = el.getBoundingClientRect().top;
+        if (elTop < triggerBottom) el.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+   document.getElementById('showVideoBtn').addEventListener('click', () => {
+  document.getElementById('powerVideoContainer').classList.remove('hidden');
+  document.getElementById('showVideoBtn').style.display = 'none';
+  document.getElementById('fanForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // Affiche message de confirmation
+  const msg = document.getElementById('formMessage');
+  msg.classList.remove('hidden');
+
+  // Reset formulaire après 2 sec
+  setTimeout(() => {
+    this.reset();
+    msg.classList.add('hidden');
+  }, 2000);
+});
+
+});
+const form = document.querySelector('.fan-form');
+  const msg = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        msg.classList.remove('hidden');
+        form.reset();
+      } else {
+        msg.textContent = "❌ Erreur d'envoi. Réessaie.";
+        msg.classList.remove('hidden');
+      }
+    }).catch(error => {
+      msg.textContent = "❌ Problème de connexion.";
+      msg.classList.remove('hidden');
+    });
+  });
+  </script>
+  <footer style="text-align: center; padding: 2rem; background: #111; color: white; margin-top: 4rem;">
+  &copy; 2025 Gwen Stacy Universe — Créé par Lombi Jérémy Juvsen 💖🕸️
+</footer>
+</body>
+</html>
+
