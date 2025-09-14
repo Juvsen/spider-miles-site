@@ -10,7 +10,7 @@
 </head>
 <body>
 <audio id="Miles" loop autoplay>
-  <source src="audio/theme.mp3" type="audio/mp3" />
+  <source src="audio/spiderverse theme.mp3" type="audio/mp3" />
 </audio>
  <section class="hero">
     <div class="overlay">
@@ -222,24 +222,8 @@
   // 🎵 Gestion musique principale
   const tracks = [
     { title: "Sunflower", file: "audio/Sunflower.mp3" },
-    { title: "All the way", file: "audio/All the way.mp3"},
-    { title: "What's Up Danger", file: "audio/What's up danger.mp3" },
-    { title: "Scared of the Dark", file: "audio/dark.mp3" },
-    { title: "Elevate", file: "audio/Elevate.mp3" },
-    { title: "Home", file: "audio/Home.mp3" },
-    { title: "Self love", file: "audio/Self love.mp3" },
-    { title: "Start a Riot", file: "audio/riot.mp3" },
-    { title: "Memories", file: "audio/Memories.mp3" },
-    { title: "Familia", file: "audio/Familia.mp3" },
-    { title: "Link Up", file: "audio/Link up.mp3" },
-    { title: "Way up", file: "audio/Way up.mp3" },
-    { title: "Annihilate", file: "audio/Annihilate.mp3" },
-    { title: "Am I Dreaming", file:"audio/Am i dreaming.mp3" },
-    { title: "Calling", file: "audio/Calling.mp3" },
-    { title: "Danger", file: "audio/Danger.mp3" },
-    { title: "Gwen's song", file: "audio/gwen.mp3" },
-    { title: "Hide", file: "audio/Hide.mp3" },
-    { title: "Nas", file: "audio/Nas.mp3" },  ];
+    // ... autres pistes
+  ];
 
   let currentIndex = 0;
   let isPlaying = false;
@@ -294,14 +278,14 @@
 
   // 🎧 Ambiance musicale
   const ambiance = document.getElementById("Miles");
-  ambiance.volume = 0.8;
+  ambiance.volume = 0.3;
 
   window.addEventListener('load', () => {
     ambiance.play().catch(() => console.log("Autoplay bloqué"));
   });
 
-  audio.addEventListener('play', () => ambiance.volume = 0.09);
-  audio.addEventListener('pause', () => ambiance.volume = 0.2);
+  audio.addEventListener('play', () => ambiance.volume = 0.2);
+  audio.addEventListener('pause', () => ambiance.volume = 0.21);
 
   // 🎥 Vidéo des pouvoirs
   document.getElementById('showVideoBtn').addEventListener('click', () => {
