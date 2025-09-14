@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<audio id="Miles" loop autoplay>
+<audio id="theme" loop autoplay>
   <source src="audio/theme.mp3" type="audio/mp3" />
 </audio>
  <section class="hero">
@@ -294,7 +294,7 @@
   loadTrack(currentIndex);
 
   // 🎧 Ambiance musicale
-  const ambiance = document.getElementById("Miles");
+  const ambiance = document.getElementById("theme");
   ambiance.volume = 0.8;
 
   window.addEventListener('load', () => {
